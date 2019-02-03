@@ -1,0 +1,150 @@
+<header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <!--<ul style="height:800px;overflow-y:scroll;overflow-y:auto;"> -->
+        <ul>
+		 {% for link in site.links1 %}
+			 {% assign count = 0 %}
+			 {% if link.type == site.blog_1 %}
+				 {% for post in site.posts %}
+				   {% assign count = count | plus: 1 %}
+				 {% endfor %}
+			 {% endif %}
+
+			 {% if link.type == site.blog_2 %}
+				 {% for post in site.posts %}
+				   {% if post.essays%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+
+			 {% if link.type == site.blog_3 %}
+				{% for post in site.posts %}
+				   {% if post.jekyll%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+
+			 {% if link.type == site.blog_4 %}
+				{% for post in site.posts %}
+				   {% if post.androidoriginal%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+
+			 {% if link.type == site.blog_5 %}
+				{% for post in site.posts %}
+				   {% if post.abouttest%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+
+       {% if link.type == site.blog_6 %}
+        {% for post in site.posts %}
+           {% if post.stock%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_7 %}
+        {% for post in site.posts %}
+           {% if post.other%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_8 %}
+        {% for post in site.posts %}
+           {% if post.python%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_9 %}
+        {% for post in site.posts %}
+           {% if post.flutter%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_10 %}
+        {% for post in site.posts %}
+           {% if post.ffmpeg%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_11 %}
+        {% for post in site.posts %}
+           {% if post.opengl%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+       {% if link.type == site.blog_12 %}
+        {% for post in site.posts %}
+           {% if post.hacker%}
+            {% assign count = count | plus: 1 %}
+           {% endif %}
+         {% endfor %}
+       {% endif %}
+
+			 <li><a  href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}({{count}})</a></li>
+		 {% endfor %}
+          <!--<li style="margin-bottom:200px;"><a href="{{site.baseurl}}/about">About({{count}})</a></li>-->
+        </ul>
+      </nav>
+      <p class="logo"><a href="/">{{ site.author }}</a></p>
+
+
+		<div class="navbar-container">
+
+		<div class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></div>
+
+			<div class="navbar-menu">
+			   {% for link in site.links %}
+				<a href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}</a>  <!--title="访问 {{  link.name }}"-->
+				<!--<a href="{{ link.url }}">{{ link.name }}</a>-->
+					{% endfor %}
+			</div>
+
+
+			<div class="navbar-mobile-menu" onclick="">
+				<span class="icon-menu cross"><span class="middle"></span></span>
+				<ul>
+				   {% for link in site.links %}
+					 <li><a href="{{ link.url }}"data-hover="{{link.name}}">{{ link.name }}</a></li>  <!--title="访问 {{  link.name }}"-->
+					 <!--<li><a href="{{ link.url }}">{{ link.name }}</a></li>-->
+				   {% endfor %}
+				</ul>
+			</div>
+
+
+
+		</div>
+
+    <!--  <div class="search-icon-container">
+	    <a href="/" style="text-decoration: none; color: inherit;margin-right:20px;">Home</a>
+		<a href="/about" style=" text-decoration: none; color: inherit;margin-right:20px;">About</a>
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div> -->
+
+
+    </div>
+  </div>
+</header> <!-- End Header -->
