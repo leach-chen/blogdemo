@@ -25,10 +25,10 @@ GitHub搭建个人网站可基于jekyll或者hexo或者其它的，我看官方�
 <img src="/assets/img/blog/jekyll/jekyll_github/1.png" width = "300px" height = "300px" style="float:left"/>
 
 <img src="/assets/img/blog/jekyll/jekyll_github/2.png" width = "300px" height = "300px"/><br>
-**3.**浏览器里访问<a href="https://github.com/leach-chen/blogdemo" style="text-decoration: none;" target="_blank"  title="点击前往">https://github.com/leach-chen/blogdemo</a>,可以发现这个url可以被访问了，你可以把改仓库拉取到本地，然后在里面新建一个index.html的文件,在里面输入任意内容，然后再把代码推送到git上，然后再访问改链接，可以发现index.html里面的内容被访问到了。<br><br>
+**3.**浏览器里访问<a href="https://leach-chen.github.io/" style="text-decoration: none;" target="_blank"  title="点击前往">https://leach-chen.github.io/</a>,可以发现这个url可以被访问了，你可以把改仓库拉取到本地，然后在里面新建一个index.html的文件,在里面输入任意内容，然后再把代码推送到git上，然后再访问改链接，可以发现index.html里面的内容被访问到了。<br><br>
 到这里，一个免费且无限流量的github代码托管仓库就创建完成了。
 ## **第二步 Jekyll安装**<br> ##
-首先解释下什么是jekyll，jekyll相当于一个编译工具，安装好jekyll后，你可以通过jekyll创建一个网站模板，创建好之后，我们就可以通过http://127.0.0.1:4000/访问刚刚创建的网站了（具体jekyll用法后面再介绍），我们可以实时修改刚刚创建的模板里面的内容，并可以实时通过本地url预览改动后的效果。我们把这个博客推送到上一步创建的代码仓库里，再通过<a href="https://github.com/leach-chen/blogdemo" style="text-decoration: none;" target="_blank"  title="点击前往">https://github.com/leach-chen/blogdemo</a>就可以访问到博客里面的内容了。有了Jekyll，我们不用每次改动一点点就把代码推送到仓库中进行预览，而是本地就可以预览。GitHub支持jekyll，hexo等语法解析。
+首先解释下什么是jekyll，jekyll相当于一个编译工具，安装好jekyll后，你可以通过jekyll创建一个网站模板，创建好之后，我们就可以通过http://127.0.0.1:4000/访问刚刚创建的网站了（具体jekyll用法后面再介绍），我们可以实时修改刚刚创建的模板里面的内容，并可以实时通过本地url预览改动后的效果。我们把这个博客推送到上一步创建的代码仓库里，再通过<a href="https://leach-chen.github.io/" style="text-decoration: none;" target="_blank"  title="点击前往">https://leach-chen.github.io/</a>就可以访问到博客里面的内容了。有了Jekyll，我们不用每次改动一点点就把代码推送到仓库中进行预览，而是本地就可以预览。GitHub支持jekyll，hexo等语法解析。
 
 那么如何安装jekyll呢？我这边暂只讲解windows下的安装步骤。
 
