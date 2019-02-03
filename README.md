@@ -13,11 +13,11 @@
 
 The main page would look like this:
 
-![Main page preview](https://github.com/leach-chen/blogdemo/other/img/mainpage.png)
+![Main page preview](https://leach-chen.github.io/blogdemo/other/img/mainpage.png)
 
 The post page would look like this:
 
-![Post page preview](https://github.com/leach-chen/blogdemo/other/img/articlepage.png)
+![Post page preview](https://leach-chen.github.io/blogdemo/other/img/articlepage.png)
 
 ## Features
 
