@@ -22,9 +22,9 @@ GitHub搭建个人网站可基于jekyll或者hexo或者其它的，我看官方�
 可参考<a href="https://pages.github.com/" style="text-decoration: none;" target="\_blank" title="代码托管">官方链接</a>，我这也把步骤写出来。<br><br>
 **1.**首先你要到<a href="https://github.com/" style="text-decoration: none;" target="_blank" title="点击前往">GitHub</a>上注册一个账号,例如我注册的用户名为：leach-chen（用户名可以在设置里改）<br><br>
 **2.**点击New repository-->输入仓库名称格式为：用户名.github.io(如：leach-chen.github.io)->点击Create repository<br>
-<img src="/assets/img/blog/jekyll/jekyll_github/1.png" width = "300px" height = "300px" style="float:left"/>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/1.png" width = "300px" height = "300px" style="float:left"/>
 
-<img src="/assets/img/blog/jekyll/jekyll_github/2.png" width = "300px" height = "300px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/2.png" width = "300px" height = "300px"/><br>
 **3.**浏览器里访问<a href="https://leach-chen.github.io/" style="text-decoration: none;" target="_blank"  title="点击前往">https://leach-chen.github.io/</a>,可以发现这个url可以被访问了，你可以把改仓库拉取到本地，然后在里面新建一个index.html的文件,在里面输入任意内容，然后再把代码推送到git上，然后再访问改链接，可以发现index.html里面的内容被访问到了。<br><br>
 到这里，一个免费且无限流量的github代码托管仓库就创建完成了。
 ## **第二步 Jekyll安装**<br> ##
@@ -54,9 +54,9 @@ GitHub搭建个人网站可基于jekyll或者hexo或者其它的，我看官方�
 2. 点击前往<a href="http://jekyllthemes.org/" style="text-decoration: none;" target="_blank"  title="点击前往">jekyll 主题官网</a>
 3. 我选择的<a href="http://jekyllthemes.org/themes/adam-blog/" style="text-decoration: none;" target="_blank"  title="点击前往">adam-blog</a>这篇主题<br>
 点击Homepage可以链接到该blog Github页面，点击download可以下载该博客源码，点击demo可以预览该博客效果
-<img src="/assets/img/blog/jekyll/jekyll_github/blog_demo.png" height = "300px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/blog_demo.png" height = "300px"/><br>
 4. 我们点击download，将该源码下载下来，命令行进入该目录执行jekyll server，执行成功可以在控制台看到运行路径：
-<img src="/assets/img/blog/jekyll/jekyll_github/demo_start.png" height = "300px"/>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/demo_start.png" height = "300px"/>
 若下载的主题jekyll server执行失败，则用步骤二中创建的testblog目录下的Gemfile，Gemfile.lock文件替换下载的主题里面的该文件，若还不成功，则根据控制台提示的错误，可以百度到解决方案。
 到此，我们已经选定了一个博客主题模板，接下来我们讲解下jekyll主题的目录结构
 
@@ -80,10 +80,10 @@ jekyll目录结构主要包含如下目录：<br>
 >---<br>
 >**html代码段**
 2. 上面的home-page我们到_layouts目录下可以找到：
-<img src="/assets/img/blog/jekyll/jekyll_github/struct_home.png" height = "200px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/struct_home.png" height = "200px"/><br>
 实际上根目录下index.html运行后是home-page里面的代码内容，1中**html代码段**会填充的上图中的**content**位置
 3. 上图的default布局也可以再_layouts目录下找到：
-<img src="/assets/img/blog/jekyll/jekyll_github/struct_default.png" height = "200px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/struct_default.png" height = "200px"/><br>
 实际上根目录下index.html运行后,home-page.html里面的代码内容会填充到上图中的**content**位置<br>
 jekyll是将分散在各个目录下的html文件拼接起来运行。<br>
 4. **<a href="http://jmcglone.com/guides/github-pages/" style="text-decoration: none;" target="_blank"  title="点击前往">文章链接</a>这里有篇讲的比较好的，跟着该文章里的操作，能让你更熟悉**<br>
@@ -148,20 +148,20 @@ jekyll是将分散在各个目录下的html文件拼接起来运行。<br>
 
 **1. 添加文章分类功能：**<br>
 **a.** 在_config.yml中添加如下分类
-<img src="/assets/img/blog/jekyll/jekyll_github/class_part.png" height = "200px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/class_part.png" height = "200px"/><br>
 **b.** 在_includes目录下的header.html里面添加如下代码，该代码是循环输出分类及该分类下的文章数量
-<img src="/assets/img/blog/jekyll/jekyll_github/class_part1.png" height = "200px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/class_part1.png" height = "200px"/><br>
 **c.**在根目录下创建博客文件夹，在里面创建对应目录，目录名称和a步骤中的url路径对应
-<img src="/assets/img/blog/jekyll/jekyll_github/class_part2.png" height = "200px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/class_part2.png" height = "200px"/><br>
 **d.**在每个目录下创建index.html,并按如下图方式添加代码，这样就可以按分类输出文章
-<img src="/assets/img/blog/jekyll/jekyll_github/class_part3.png" height = "200px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/class_part3.png" height = "200px"/><br>
 **2. 添加文章评论功能：**<br>
 模板本身有评论功能，但是用的是国外的Disqus，Disqus在国内被屏蔽的。
 主流的评论系统有Disqus, Facebook comment, IntenseDebate, Livefyre等。我这里选择的是IntenseDebate，其它的访问速度貌似较慢。<br>
 去<a href="https://intensedebate.com/" style="text-decoration: none;" target="_blank"  title="点击前往">IntenseDebate</a>注册账号，并获取到key，并定义在_config.yml中，如：<br>
 intensedebate_identifier: 1ce8d80a5f6d373a46f4ceaf3dff8859，intensedebate_identifier取你自己想定义的名称，值为你注册后获取到的key
 在_includes目录下创建disqus.html，并添加如下代码，这样文章就有了评论功能。
-<img src="/assets/img/blog/jekyll/jekyll_github/class_part4.png" height = "200px"/><br>
+"<img src="{{site.imagepath}}/assets/img/blog/jekyll/jekyll_github/class_part4.png" height = "200px"/><br>
 **3. 添加文章统计功能：**<br>
 我这里添加百度统计，添加谷歌统计因为被墙了，会影响文章的访问速度，添加也需要先去百度统计网站注册账户，申请key，申请到key后类似上一步定义在_config.yml中，同时会得到一段代码，把它添加到_includes目录下的head.html中,这样统计功能就添加完成
 
