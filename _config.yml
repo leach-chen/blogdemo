@@ -28,7 +28,7 @@ phone:
 github:
 jianshu:
 juejin:
-csdn: 
+csdn:
 
 # Newsletter
 mailchimp: # Add your MailChimp form identifier.
@@ -84,11 +84,11 @@ links1:
     type:         recent
     external:     false
   - name:         随笔
-    url:          /myblog/essays
+    url:          /blogdemo/myblog/essays
     type:         essays
     external:     false
   - name:         Jekyll
-    url:          /myblog/jekyll
+    url:          /blogdemo/myblog/jekyll
     type:         jekyll
     external:     false
 
