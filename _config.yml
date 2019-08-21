@@ -65,7 +65,7 @@ imagepath: /blogdemo
 
 links:
   - name:         Home
-    url:          /
+    url:          https://www.leachchen.com
     external:     false
   - name:         About
     url:          /blogdemo/about
