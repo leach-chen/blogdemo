@@ -7,7 +7,7 @@
 
 [网站参考来源](https://github.com/artemsheludko/adam-blog)
 
-[网站搭建教程](https://github.com/leach-chen/blogdemo/jekyll-github-blog/)
+[网站搭建教程](https://www.jianshu.com/p/9f71e260925d)
 
 [网站效果预览（点击预览）](https://github.com/leach-chen/blogdemo)
 
