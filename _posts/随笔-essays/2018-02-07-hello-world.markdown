@@ -38,4 +38,4 @@ Hello World！
 20. 在jekyll或者hexo官网有许多个人网站模板，可找到自己喜欢的进行修改
 
 
-本网站简约舒适，后续出將推出本站详细搭站过程及收纳优质技术类博客及自己原创博客。<br>有兴趣的小伙伴欢迎点击star<a href = "https://github.com/leach-chen/leach-chen.github.io" style="text-decoration:none;" target="blank" title="本站源码，欢迎前往点击star">本站源码</a>
+本网站简约舒适，后续出將推出本站详细搭站过程及收纳优质技术类博客及自己原创博客。<br>有兴趣的小伙伴欢迎点击star<a href = "https://github.com/leach-chen/blogdemo" style="text-decoration:none;" target="blank" title="本站源码，欢迎前往点击star">本站源码</a>
